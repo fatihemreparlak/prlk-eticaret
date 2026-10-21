@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRLK Marka Renkleri -->
+    <color name="prlk_primary">#1A1A1A</color> <!-- Asil Siyah / Koyu Gri -->
+    <color name="prlk_accent">#7D7D7D</color>  <!-- Soft Gri -->
+    <color name="text_dark">#222222</color>
+    <color name="text_muted">#8C8C8C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="input_background">#F8F9FA</color>
+    <color name="item_product_background">#B4B4B4</color>
+    <color name="beyazimsi">#D1D0D0</color>
+
+
+
+</resources>

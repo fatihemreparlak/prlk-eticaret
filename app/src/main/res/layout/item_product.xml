@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/item_product_background"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_item_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@color/white"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.ProductImage" />
+
+            <!-- FAVORİ BUTONU -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_item_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_margin="6dp"
+                app:fabSize="mini"
+                app:elevation="2dp"
+                app:backgroundTint="@color/white"
+                app:srcCompat="@android:drawable/btn_star_big_off"
+                app:tint="@color/text_muted" />
+        </FrameLayout>
+
+        <!-- YAZILAR VE BİLGİLER -->
+        <TextView
+            android:id="@+id/txt_item_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="11sp"
+            android:textColor="@color/text_muted"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txt_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürün Adı"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/txt_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 TL"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/prlk_primary"
+            android:layout_marginTop="4dp" />
+
+        <!-- SEPETE EKLE / SAYAÇ ALANI -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sepete Ekle"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/prlk_primary"
+                android:textColor="@color/white"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="8dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_quantity_counter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_counter_border"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_decrease"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textSize="18sp"
+                    android:textColor="@color/prlk_primary"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp" />
+
+                <TextView
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:gravity="center" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_increase"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textSize="16sp"
+                    android:textColor="@color/prlk_primary"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

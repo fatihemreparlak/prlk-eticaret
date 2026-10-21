@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="Favorilerim" />
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Sepetim" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/bottom_nav_account"
+        android:title="Hesabım" />
+</menu>
